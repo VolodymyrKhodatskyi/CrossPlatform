@@ -29,10 +29,10 @@ namespace Lab
                 string result;
                 line = reader.ReadToEnd();
                 
-                // Trying to number from file
+                // Trying to parse number from file
                 if (int.TryParse(line, out int N))
                 {
-                    if (N < 1 || N > 2147483647)
+                    if (N < 1 || N > 2147483647) // checking if number is correct
                     {
                         Console.WriteLine("Error! In the input file, a number is entered incorrectly. The input must be an integer not less than 1 and not more than 2147483647");
                         using (StreamWriter writer = new StreamWriter(OutputPath, false))
@@ -40,7 +40,7 @@ namespace Lab
                             writer.WriteLineAsync(string.Empty);
                         }
                     }
-                    else // if number out of bound
+                    else // if number is correct
                     {
                         Console.WriteLine("A number that was entered " + N);
                         Console.WriteLine("Start searching for a smooth number by number " + N);
