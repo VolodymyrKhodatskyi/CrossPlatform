@@ -23,7 +23,7 @@ namespace Lab
                 double result;
                 input = reader.ReadToEnd().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-                if (input.Length > 2)
+                if (input.Length != 2)
                 {
                     Console.WriteLine("Error! In the input file, there should be only 2 natural numbers(N <= 500, Q <= 3000) divided by space");
                     using (StreamWriter writer = new StreamWriter(OutputPath, false))
