@@ -20,6 +20,10 @@ namespace Lab
             if (!File.Exists(InputPath))
             {
                 Console.WriteLine("Error! File INPUT.txt with path: " + InputPath + " wasnt found");
+                using (StreamWriter writer = new StreamWriter(OutputPath, false))
+                {
+                    writer.WriteLineAsync(string.Empty);
+                }
                 return;
             }
             // read content of INPUT.txt file
