@@ -9,17 +9,17 @@
 
 Щоб запустити білд лабораторної:
 ```bash
-dotnet build MSBuild.proj -t:Build -p:Solution=Lab1
+dotnet build Build.proj -t:Build -p:Solution=Lab1
 ```
 
 Щоб запустити код лабораторної:
 ```bash
-dotnet build MSBuild.proj -t:Run -p:Solution=Lab1
+dotnet build Build.proj -t:Run -p:Solution=Lab1
 ```
 
 Щоб запустити тести лабораторної:
 ```bash
-dotnet build MSBuild.proj -t:Test -p:Solution=Lab1
+dotnet build Build.proj -t:Test -p:Solution=Lab1
 ```
 
 Щоб використовувати ці команди для інших лабораторних, замість Lab1, вводити номер потрібної лабораторної, наприклад: -p:Solution=Lab2
