@@ -58,3 +58,4 @@ dotnet run version
 ![VirtualBox_Windows VM_14_11_2024_02_51_22](https://github.com/user-attachments/assets/d094a35a-ba47-4825-bcd2-5a5ba0e846d2)
 
 Результат виконання на Віртуальній Машині Linux:
+![VirtualBox_CrossPlatform_linux_1731545809067_97413_14_11_2024_03_11_08](https://github.com/user-attachments/assets/0ba92da4-90d0-4179-a0d5-211e97003b0a)
