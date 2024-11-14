@@ -52,3 +52,7 @@ dotnet run run lab3 --input Lab3\INPUT.TXT --output Lab3\OUTPUT.TXT
 ```bash
 dotnet run version
 ```
+
+
+Результат виконання на Віртуальній Машині Windows:
+
