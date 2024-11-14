@@ -1,9 +1,9 @@
-﻿using Lab;
+﻿using Lab3;
 using System;
 using System.Text;
 using Xunit;
 
-namespace Tests
+namespace Tests3
 {
 
     public class Tests

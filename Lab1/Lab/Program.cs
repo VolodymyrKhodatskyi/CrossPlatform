@@ -4,10 +4,9 @@ using System.Linq;
 using System.IO;
 using System.Numerics;
 using System.Text;
-using Lab;
 
 
-namespace Lab
+namespace Lab1
 {
     public static class Program
     {
@@ -16,6 +15,11 @@ namespace Lab
             Console.OutputEncoding = UTF8Encoding.UTF8;
             string InputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\INPUT.txt");
             string OutputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\OUTPUT.txt");
+            CheckPaths(InputPath, OutputPath);
+        }
+
+        public static void CheckPaths(string InputPath, string OutputPath)
+        {
             // check if File INPUT.txt exists
             if (!File.Exists(InputPath))
             {
@@ -32,7 +36,7 @@ namespace Lab
                 string? line;
                 string result;
                 line = reader.ReadToEnd();
-                
+
                 // Trying to parse number from file
                 if (int.TryParse(line, out int N))
                 {

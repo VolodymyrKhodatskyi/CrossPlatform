@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace Lab
+namespace Lab3
 {
     public static class Program
     {
@@ -11,10 +11,9 @@ namespace Lab
         static int[] usedVertices = new int[MAX_VERTEXES_COUNT]; // array of used vertices
         static bool flag = false;
         static int n, m;
-        static string inputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\INPUT.txt");
-        static string outputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\OUTPUT.txt");
+        
 
-        static void Dfs(int v, int previous = -1)
+        public static void Dfs(int v, int previous = -1)
         {
             usedVertices[v] = 1; // note that we have visited this vertex
             for (int i = 1; i <= n; i++) // go through the vertices
@@ -34,7 +33,7 @@ namespace Lab
             }
         }
 
-        static bool ValidateFirstLine(string[] firstLine)
+        public static bool ValidateFirstLine(string[] firstLine)
         {
             if (firstLine.Length != 2)
             {
@@ -51,7 +50,7 @@ namespace Lab
             return true;
         }
 
-        static bool ValidateEdgeLine(string[] edgeLine)
+        public static bool ValidateEdgeLine(string[] edgeLine)
         {
             if (edgeLine.Length != 2)
             {
@@ -71,7 +70,14 @@ namespace Lab
 
         public static void Main()
         {
+            string inputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\INPUT.txt");
+            string outputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\OUTPUT.txt");
             Console.OutputEncoding = UTF8Encoding.UTF8;
+            CheckPaths(inputPath, outputPath);
+        }
+
+        public static void CheckPaths(string inputPath, string outputPath)
+        {
             try
             {
                 string[] lines = File.ReadAllLines(inputPath); // read all lines of the file

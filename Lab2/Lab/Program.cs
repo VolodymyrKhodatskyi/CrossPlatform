@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Lab
+namespace Lab2
 {
     public static class Program
     {
@@ -10,6 +10,11 @@ namespace Lab
             Console.OutputEncoding = UTF8Encoding.UTF8;
             string InputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\INPUT.txt");
             string OutputPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\OUTPUT.txt");
+            CheckPaths(InputPath, OutputPath);
+        }
+
+        public static void CheckPaths(string InputPath, string OutputPath)
+        {
             // check if File INPUT.txt exists
             if (!File.Exists(InputPath))
             {
@@ -59,7 +64,7 @@ namespace Lab
                         Console.WriteLine("A numbers that was entered N: " + N + " and Q: " + Q);
                         Console.WriteLine("Start searching for probability");
                         result = Calculation.Calculate(N, Q);
-                        
+
                         using (StreamWriter writer = new StreamWriter(OutputPath, false))
                         {
                             writer.WriteLineAsync(result.ToString(System.Globalization.CultureInfo.InvariantCulture)); // converting double to american notation

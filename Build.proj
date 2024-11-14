@@ -1,25 +1,25 @@
 <Project>
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Solution Condition="'$(Solution)' == ''"></Solution>
-  </PropertyGroup>
-
-  <ItemGroup Condition="'$(Solution)' != ''">
-    <ProjectFile Include="$(Solution)\**\*.csproj" />
-  </ItemGroup>
-
-  <Target Name="Build">
-    <MSBuild Projects="@(ProjectFile)" Targets="Restore;Build" />
-  </Target>
-
-  <Target Name="Run">
 	<PropertyGroup>
-		<MainProject>Lab\Lab.csproj</MainProject>
+		<TargetFramework>net8.0</TargetFramework>
+		<Solution Condition="'$(Solution)' == ''"></Solution>
 	</PropertyGroup>
-	<Exec Command="dotnet run --project &quot;$(MainProject)&quot;" WorkingDirectory="$(Solution)" />
-  </Target>  	
-	
-  <Target Name="Test">
-    <Exec Command="dotnet test --logger &quot;console;verbosity=detailed&quot;" WorkingDirectory="$(Solution)" />
-  </Target>
+
+	<ItemGroup Condition="'$(Solution)' != ''">
+		<ProjectFile Include="$(Solution)\**\*.csproj" />
+	</ItemGroup>
+
+	<Target Name="Build">
+		<MSBuild Projects="@(ProjectFile)" Targets="Restore;Build" />
+	</Target>
+
+	<Target Name="Run">
+		<PropertyGroup>
+			<MainProject>$(Solution)\Lab\$(Solution).csproj</MainProject>
+		</PropertyGroup>
+		<Exec Command="dotnet run --project &quot;$(MainProject)&quot; -- --input $(Solution)/INPUT.TXT --output $(Solution)/OUTPUT.TXT" WorkingDirectory="." />
+	</Target>
+
+	<Target Name="Test">
+		<Exec Command="dotnet test --logger &quot;console;verbosity=detailed&quot;" WorkingDirectory="$(Solution)" />
+	</Target>
 </Project>

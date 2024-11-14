@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab
+namespace Lab1
 {
     public static class Calculation
     {
