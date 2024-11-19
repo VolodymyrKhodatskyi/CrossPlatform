@@ -11,7 +11,7 @@ namespace Lab5.Models
 
         [Required]
         [MaxLength(500)]
-        [Display(Name = "Ваше прізвище")]
+        [Display(Name = "Ваше ПІБ")]
         public string FullName { get; set; }
 
         [Required]
