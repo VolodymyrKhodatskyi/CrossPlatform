@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Lab2";
+}
+<h1 class="text-center ">Лабораторна робота 2</h1>
+<h2 class="text-center ">Варіант 24</h2>
+<p>
+    Завдання: Кубик, грані якого позначені цифрами від 1 до 6, кидають N разів. Потрібно знайти ймовірність того, що сума чисел, що випали, дорівнюватиме Q.
+</p>
+<p>
+    Вхідні дані: Вхідний файл INPUT.TXT містить натуральні числа N та Q (N ≤ 500, Q ≤ 3000).
+</p>
+<p>
+    Вихідні дані: У вихідний файл OUTPUT.TXT виведіть єдине речове число - ймовірність, яка повинна відрізнятися від справжнього значення не більше ніж на 10-6.
+</p>
+<form method="post" enctype="multipart/form-data" action="@Url.Action("Lab2", "Labs")">
+    <label for="inputFile" class="form-label">Вхідний файл:</label>
+    <input type="file" class="form-control" id="inputFile" name="inputFile" required>
+    <br />
+    <button type="submit" class="btn-primary">Виконати</button>
+</form>
+
+<label class="form-label">Результат:</label>
+<textarea class="form-control" id="outputContent" rows="2" readonly>@ViewBag.Result</textarea>

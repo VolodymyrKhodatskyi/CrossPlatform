@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Lab1\Lab\Lab1.csproj" />
+		<ProjectReference Include="..\..\Lab2\Lab\Lab2.csproj" />
+		<ProjectReference Include="..\..\Lab3\Lab\Lab3.csproj" />
+	</ItemGroup>
+	
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

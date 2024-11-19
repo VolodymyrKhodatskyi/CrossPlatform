@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Lab1";
+}
+
+<h1 class="text-center ">Лабораторна робота 1</h1>
+<h2 class="text-center ">Варіант 24</h2>
+<p>
+    Завдання: Назвемо число гладким, якщо його цифри, починаючи зі старшого розряду, утворюють послідовність. Упорядкуємо усі такі числа у зростаючому порядку та надамо кожному номер. Вам потрібно за номером N вивести N-е гладке число.
+</p>
+<p>
+    Вхідні дані: У вхідному файлі INPUT.TXT міститься номер N (1 ≤ N ≤ 2147483647).
+</p>
+<p>
+    Вихідні дані: Вихідний файл OUTPUT.TXT повинен містити шукане N гладке число.
+</p>
+
+<form method="post" enctype="multipart/form-data" action="@Url.Action("Lab1", "Labs")">
+    <label for="inputFile" class="form-label">Вхідний файл:</label>
+    <input type="file" class="form-control" id="inputFile" name="inputFile" required>
+    <br />
+    <button type="submit" class="btn-primary">Виконати</button>
+</form>
+
+<label class="form-label">Результат:</label>
+<textarea class="form-control" id="outputContent" rows="2" readonly>@ViewBag.Result</textarea>
