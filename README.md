@@ -90,7 +90,7 @@ http://localhost:5117
 
 Скриншоти Застосунку:
 <img width="1280" alt="Screenshot 2024-11-20 013425" src="https://github.com/user-attachments/assets/5f5ba829-ada9-4ceb-9b18-6d9aad816dfe">
-<img width="1276" alt="Screenshot 2024-11-20 013457" src="https://github.com/user-attachments/assets/bb9d49b0-7ba8-4140-a67d-fe326d551cfb">
+<img width="1279" alt="Screenshot 2024-11-20 014847" src="https://github.com/user-attachments/assets/513ce5b8-ca44-4abc-bbed-6bce14b21f05">
 <img width="1271" alt="Screenshot 2024-11-20 013521" src="https://github.com/user-attachments/assets/978c2786-3a5a-45d5-8a86-7d0fb5080fa3">
 <img width="1280" alt="Screenshot 2024-11-20 013547" src="https://github.com/user-attachments/assets/e8bebaeb-211a-4b16-acb1-24cdd695bd1e">
 <img width="1280" alt="Screenshot 2024-11-20 013607" src="https://github.com/user-attachments/assets/00b3518c-29a6-4db4-babf-b667342815dd">
