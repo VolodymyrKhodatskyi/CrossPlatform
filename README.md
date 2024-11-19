@@ -24,7 +24,7 @@ dotnet build Build.proj -t:Test -p:Solution=Lab1
 
 Щоб використовувати ці команди для інших лабораторних, замість Lab1, вводити номер потрібної лабораторної, наприклад: -p:Solution=Lab2
 
-## Команди для запуску проектів Лабораторна 4
+## Команди для запуску проектів Лабораторної 4
 
 Для запуску  певних лабораторних введіть наступні команди з папки Lab4 репозиторію:
 
@@ -59,3 +59,39 @@ dotnet run version
 
 Результат виконання на Віртуальній Машині Linux:
 ![VirtualBox_CrossPlatform_linux_1731545809067_97413_14_11_2024_03_11_08](https://github.com/user-attachments/assets/0ba92da4-90d0-4179-a0d5-211e97003b0a)
+
+
+
+## Команди для запуску проектів Лабораторної 4
+
+Для запуску лабораторної з Windows:
+
+Щоб перейти в папку Lab5:
+```bash
+cd Lab5
+```
+
+Щоб запустити лабораторну 5:
+```bash
+dotnet run --project Lab5
+```
+
+
+
+Перейти в браузері по адресі:
+```bash
+http://localhost:5117
+```
+
+
+
+Результат виконання на Віртуальній Машині Linux:
+![VirtualBox_CrossPlatform_linux_1732059069249_25372_20_11_2024_01_36_24](https://github.com/user-attachments/assets/5121e9ec-97a2-411f-a635-be8ed7d7b7f8)
+
+Скриншоти Застосунку:
+<img width="1280" alt="Screenshot 2024-11-20 013425" src="https://github.com/user-attachments/assets/5f5ba829-ada9-4ceb-9b18-6d9aad816dfe">
+<img width="1276" alt="Screenshot 2024-11-20 013457" src="https://github.com/user-attachments/assets/bb9d49b0-7ba8-4140-a67d-fe326d551cfb">
+<img width="1271" alt="Screenshot 2024-11-20 013521" src="https://github.com/user-attachments/assets/978c2786-3a5a-45d5-8a86-7d0fb5080fa3">
+<img width="1280" alt="Screenshot 2024-11-20 013547" src="https://github.com/user-attachments/assets/e8bebaeb-211a-4b16-acb1-24cdd695bd1e">
+<img width="1280" alt="Screenshot 2024-11-20 013607" src="https://github.com/user-attachments/assets/00b3518c-29a6-4db4-babf-b667342815dd">
+
