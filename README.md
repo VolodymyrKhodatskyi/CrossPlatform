@@ -86,6 +86,11 @@ http://localhost:5117
 
 Для запуску лабораторної з Linux:
 
+Запуск віртуальної машини:
+```bash
+vagrant up linux
+```
+
 Щоб перейти в папку Lab5:
 ```bash
 cd /vagrant/Lab5
