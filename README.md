@@ -60,6 +60,8 @@ dotnet run version
 Результат виконання на Віртуальній Машині Linux:
 ![VirtualBox_CrossPlatform_linux_1731545809067_97413_14_11_2024_03_11_08](https://github.com/user-attachments/assets/0ba92da4-90d0-4179-a0d5-211e97003b0a)
 
+На моєму пристрої не вдається запустити macOS задопомогою Vagrant в Virtualbox. На форумі Virtualbox пишуть що запускати віртуальні машини можна лише на пристроях Apple
+<img width="1279" alt="Screenshot 2024-11-20 020803" src="https://github.com/user-attachments/assets/6a499679-ff35-48ce-adb4-1b0f2f9ab91e">
 
 
 ## Команди для запуску проектів Лабораторної 5
