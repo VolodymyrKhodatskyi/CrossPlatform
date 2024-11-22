@@ -1,0 +1,30 @@
+﻿@model IEnumerable<Lab6.Models.CustomerPhoneNumbers>
+
+<h1>Список номерів телефонів</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>CustomerId</th>
+        <th>CustomerNumberTypeCode</th>
+        <th>HeldFromDate</th>
+        <th>HeldToDate</th>
+        <th>OtherDetails</th>
+        <th>Details</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var phoneNumbers in Model)
+
+        {
+        <tr>
+                <td>@phoneNumbers.CustomerId</td>
+                <td>@phoneNumbers.CustomerNumberTypeCode</td>
+                <td>@phoneNumbers.HeldFromDate</td>
+                <td>@phoneNumbers.HeldToDate</td>
+                <td>@phoneNumbers.OtherDetails</td>
+                
+        </tr>
+    }
+    </tbody>
+</table>
